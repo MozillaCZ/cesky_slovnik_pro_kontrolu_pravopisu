@@ -4,7 +4,7 @@
      xmlns:em="http://www.mozilla.org/2004/em-rdf#">
   <Description about="urn:mozilla:install-manifest">
     <em:id>cs@dictionaries.addons.mozilla.org</em:id>
-    <em:version>1.0.1</em:version>
+    <em:version>1.0.2</em:version>
     <em:targetApplication>
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
@@ -27,5 +27,6 @@
       </Description>
     </em:targetApplication>
     <em:name>České slovníky pro kontrolu pravopisu</em:name>
+    <em:unpack>true</em:unpack>
   </Description>
 </RDF>
