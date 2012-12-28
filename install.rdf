@@ -5,7 +5,7 @@
   <Description about="urn:mozilla:install-manifest">
     <em:id>cs@dictionaries.addons.mozilla.org</em:id>
     <em:type>64</em:type>
-    <em:version>1.0.3</em:version>
+    <em:version>1.0.4</em:version>
     <em:targetApplication>
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
@@ -27,7 +27,8 @@
 	<em:maxVersion>2.15.*</em:maxVersion>
       </Description>
     </em:targetApplication>
-    <em:name>České slovníky pro kontrolu pravopisu</em:name>
+    <em:name>Český slovník pro kontrolu pravopisu</em:name>
+    <em:description>Slovník pro kontrolu pravopisu pro aplikace Mozilla.</em:description>
     <em:unpack>true</em:unpack>
   </Description>
 </RDF>
