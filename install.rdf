@@ -52,6 +52,15 @@
       </Description>
     </em:targetApplication>
 	
+	<!--Instantbird-->
+    <em:targetApplication>
+      <Description>
+        <em:id>{33cb9019-c295-46dd-be21-8c4936574bee}</em:id>
+        <em:minVersion>1.2a1pre</em:minVersion>
+        <em:maxVersion>1.5</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
     <em:name>Český slovník pro kontrolu pravopisu</em:name>
     <em:description>Slovník pro kontrolu pravopisu pro aplikace Mozilla.</em:description>
     <em:unpack>true</em:unpack>
