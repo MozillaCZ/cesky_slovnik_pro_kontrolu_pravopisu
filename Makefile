@@ -12,8 +12,8 @@ clean :: clean_all
 
 make_xpi:
 	$(MKDIR) $(TARGET) && \
-	$(ZIPPROG) -r $(TARGET)/$(PROJECT).xpi dictionaries icon.png icon64.png install.rdf README.md && cd ..
-	
+	$(ZIPPROG) -r $(TARGET)/$(PROJECT).xpi dictionaries icon.png icon64.png install.rdf && cd ..
+
 clean_all:
 	$(RM_RF) $(TARGET)
 
