@@ -1,0 +1,17 @@
+language: bash
+
+before_deploy:
+  - make all
+
+deploy:
+  - provider: releases
+    skip_cleanup: true
+    file_glob: true
+    file: target/*
+    api_key: $GITHUB_TOKEN
+    on:
+      branch: master
+      tags: true
+
+after_deploy:
+  - make clean
