@@ -15,13 +15,13 @@ make_xpi_s_diakritikou:
 	$(MKDIR) $(TARGET)
 	$(ZIPPROG) -r $(TARGET)/$(S_DIAKRITIKOU).xpi icon.png icon64.png
 	cd s_diakritikou && \
-	$(ZIPPROG) -r ../$(TARGET)/$(S_DIAKRITIKOU).xpi dictionaries install.rdf
+	$(ZIPPROG) -r ../$(TARGET)/$(S_DIAKRITIKOU).xpi dictionaries manifest.json
 
 make_xpi_bez_diakritiky:
 	$(MKDIR) $(TARGET)
 	$(ZIPPROG) -r $(TARGET)/$(BEZ_DIAKRITIKY).xpi icon.png icon64.png
 	cd bez_diakritiky && \
-	$(ZIPPROG) -r ../$(TARGET)/$(BEZ_DIAKRITIKY).xpi dictionaries install.rdf
+	$(ZIPPROG) -r ../$(TARGET)/$(BEZ_DIAKRITIKY).xpi dictionaries manifest.json
 
 clean_all:
 	$(RM_RF) $(TARGET)

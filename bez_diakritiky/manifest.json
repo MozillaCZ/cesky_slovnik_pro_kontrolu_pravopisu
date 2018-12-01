@@ -1,0 +1,15 @@
+{
+  "applications": {
+    "gecko": {
+      "id": "cs2@dictionaries.addons.mozilla.org"
+    }
+  },
+  "manifest_version": 2,
+  "name": "Český slovník kontroly pravopisu (bez diakritiky)",
+  "description": "Slovník pro kontrolu pravopisu u textů bez diakritiky pro aplikace Mozilla.",
+  "version": "1.1.1",
+  "author": "Mozilla.cz",
+  "dictionaries": {
+    "cs": "dictionaries/Cestina.dic"
+  }
+}
