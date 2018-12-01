@@ -7,7 +7,7 @@
   "manifest_version": 2,
   "name": "Český slovník pro kontrolu pravopisu",
   "description": "Slovník pro kontrolu pravopisu pro aplikace Mozilla.",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "author": "Mozilla.cz",
   "dictionaries": {
     "cs": "dictionaries/cs.dic"

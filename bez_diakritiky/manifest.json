@@ -5,9 +5,9 @@
     }
   },
   "manifest_version": 2,
-  "name": "Český slovník kontroly pravopisu (bez diakritiky)",
+  "name": "Česká kontrola pravopisu (bez diakritiky)",
   "description": "Slovník pro kontrolu pravopisu u textů bez diakritiky pro aplikace Mozilla.",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "author": "Mozilla.cz",
   "dictionaries": {
     "cs": "dictionaries/Cestina.dic"
