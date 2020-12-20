@@ -1,7 +1,7 @@
 S_DIAKRITIKOU=cesky_slovnik_pro_kontrolu_pravopisu
 BEZ_DIAKRITIKY=cesky_slovnik_pro_kontrolu_pravopisu_bez_diakritiky
 MKDIR=mkdir -p
-TARGET=target
+TARGET=dist
 ZIPPROG=zip
 RM_RF=rm -rf
 

@@ -1,0 +1,21 @@
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+  workflow_dispatch: # allows to be run manually
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v2
+      - name: Build add-on
+        run: make all
+      - name: Save built add-on
+        uses: actions/upload-artifact@v2
+        with:
+          name: dist
+          path: dist
+          retention-days: 30
