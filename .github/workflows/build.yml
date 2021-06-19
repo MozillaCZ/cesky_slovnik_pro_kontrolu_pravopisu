@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Clone repository
         uses: actions/checkout@v2
+        with:
+          submodules: true
       - name: Build add-on
         run: make all
       - name: Save built add-on
