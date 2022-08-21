@@ -1,23 +1,40 @@
+name: Build
+
 on:
   push:
     branches:
       - master
   pull_request:
   workflow_dispatch: # allows to be run manually
+  workflow_call: # when called from another workflow
+    inputs:
+      checkout_ref:
+        required: true
+        type: string
+    outputs:
+      artifact_name:
+        value: ${{ jobs.build.outputs.artifact_name }}
+
+env:
+  ARTIFACT_NAME: dist
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - name: Clone repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
+          ref: ${{ inputs.checkout_ref }}
           submodules: true
       - name: Build add-on
         run: make all
       - name: Save built add-on
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
-          name: dist
+          name: ${{ env.PRODUCTION_ARTIFACT_NAME }}
           path: dist
           retention-days: 30
+    outputs:
+      artifact_name: ${{ env.PRODUCTION_ARTIFACT_NAME }}
